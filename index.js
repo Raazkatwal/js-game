@@ -32,3 +32,20 @@ document.addEventListener("keydown", e => {
         player.style.transform = `translate(${x}px, ${y}px)`;
     }
 })
+async function bot_load(){
+    const new_bot = document.createElement("img");
+    new_bot.src = "img/bot-car.png";
+    new_bot.classList.add("cars", "bot-car");
+    document.body.appendChild(new_bot);
+    const bot_car = document.querySelector(".bot-car");
+    bot_car.style.transform = `translate(${playable_width}px, ${Math.floor(Math.random() * 600)}px)`;
+    for (let i = playable_width; i >= 0; i--) {
+        await wait(5);
+        bot_car.style.transform = `translateX(${i}px)`;        
+    }
+}
+    function wait(ms) {
+        return new Promise(resolve => {
+            setTimeout(()=>{resolve('')},ms);
+        })
+    }
