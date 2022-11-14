@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(img/highway.png);
+    background-size: cover;
+    overflow: hidden;
+}
+.cars{
+    width: 170px;
+    /* position: absolute; */
+}
