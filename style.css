@@ -6,7 +6,11 @@ body{
     background-image: url(img/highway.png);
     background-size: cover;
     overflow: hidden;
+    min-height: 100vh;
 }
 .cars{
     width: 170px;
+}
+.player_car{
+    position: absolute;
 }
