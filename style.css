@@ -7,13 +7,12 @@ body{
     background-color: #151515;
 }
 .target{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: grid;
     place-items: center; 
     position: relative;
-    /* transform: translate(230px, 234px); */
 }
 .target div{
     position: absolute;
@@ -48,4 +47,12 @@ body{
     background-color: #fff;
     width: 20%;
     height: 20%;
+}
+.score-display{
+    color: white;
+    font-family: monospace;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    z-index: 99;
 }
